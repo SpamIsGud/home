@@ -19,7 +19,7 @@ export async function getStaticProps() {
 		fetch(url, { mode: "no-cors" }).then((r) => r.json());
 
 	const weather = await fetcher(
-		"http://api.weatherapi.com/v1/current.json?key=e900e6ba03db4c49939213648202912&q=Vancouver"
+		"http://api.weatherapi.com/v1/current.json?key=fbf0eca656c64790b7530624211903&q=LA"
 	);
 
 	const gh = await fetcher("https://api.github.com/users/punctuations");
@@ -38,7 +38,7 @@ export default function Home(props) {
 	const {
 		data: weather,
 	} = useSWR(
-		"http://api.weatherapi.com/v1/current.json?key=e900e6ba03db4c49939213648202912&q=Vancouver",
+		"http://api.weatherapi.com/v1/current.json?key=fbf0eca656c64790b7530624211903&q=LA",
 		fetcher,
 		{ initialData: props.weather, revalidateOnMount: true }
 	);
@@ -61,14 +61,14 @@ export default function Home(props) {
 				<meta name="theme-color" content="#2f3136" />
 			</Head>
 			<NextSeo
-				title="portfolio"
-				titleTemplate="%s | matt.mdx"
+				title="lll"
+				titleTemplate="%s lll"
 				description="Student and Full-Stack JavaScript Engineer."
 				openGraph={{
 					type: "website",
 					url: "https://dont-ping.me/",
 					title: "portfolio - matt.mdx",
-					description: "Student and Full-Stack JavaScript Engineer.",
+					description: "E.",
 					images: [
 						{
 							url: "https://github.com/punctuations.png",
