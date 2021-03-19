@@ -22,7 +22,7 @@ export async function getStaticProps() {
 		"http://api.weatherapi.com/v1/current.json?key=fbf0eca656c64790b7530624211903&q=LA"
 	);
 
-	const gh = await fetcher("https://api.github.com/users/punctuations");
+	const gh = await fetcher("https://api.github.com/users/spamisgud");
 
 	return {
 		props: {
@@ -43,7 +43,7 @@ export default function Home(props) {
 		{ initialData: props.weather, revalidateOnMount: true }
 	);
 	const { data: gh } = useSWR(
-		"https://api.github.com/users/punctuations",
+		"https://api.github.com/users/spamisgud",
 		fetcher,
 		{ initialData: props.gh }
 	);
@@ -57,7 +57,7 @@ export default function Home(props) {
 	return (
 		<>
 			<Head>
-				<link rel="icon" href="https://github.com/punctuations.png" />
+				<link rel="icon" href="https://github.com/spamisgud.png" />
 				<meta name="theme-color" content="#2f3136" />
 			</Head>
 			<NextSeo
@@ -66,20 +66,20 @@ export default function Home(props) {
 				description="Student and Full-Stack JavaScript Engineer."
 				openGraph={{
 					type: "website",
-					url: "https://dont-ping.me/",
+					url: "nice",
 					title: "portfolio - matt.mdx",
 					description: "E.",
 					images: [
 						{
-							url: "https://github.com/punctuations.png",
+							url: "https://github.com/spamisgud.png",
 							width: "400px",
 							height: "200px",
 						},
 					],
 				}}
 				twitter={{
-					handle: "@atmattt",
-					site: "@atmattt",
+					handle: "@twitter",
+					site: "@twitter",
 					cardType: "summary_large_image",
 				}}
 			/>
@@ -298,7 +298,7 @@ export default function Home(props) {
 									<>
 										<figure className="relative flex flex-col justify-center items-center">
 											<img
-												src="https://github.com/punctuations.png"
+												src="https://github.com/spamisgud.png"
 												className="rounded-full max-w-28 max-h-28 hover:scale-105 transform-gpu transition-transform duration-300"
 											/>
 											<figcaption className="p-1 px-4 bg-purple-500 text-white font-medium rounded-lg absolute -bottom-3 hover:scale-105 transform-gpu transition-transform duration-300">
@@ -311,7 +311,7 @@ export default function Home(props) {
 													matt
 												</h3>
 												<a
-													href="https://github.com/punctuations/"
+													href="https://github.com/spamisgud/"
 													target="_blank"
 												>
 													<p className="-mt-3 border-gray-300 hover:bg-purple-500 border hover:border-transparent p-1 px-3 text-gray-500 hover:text-white rounded-2xl transition-colors duration-300">
@@ -345,7 +345,7 @@ export default function Home(props) {
 													/>
 												</h3>
 												<a
-													href="https://github.com/punctuations/"
+													href="https://github.com/spamisgud/"
 													target="_blank"
 												>
 													<p className="-mt-3 border-gray-300 hover:bg-purple-500 border hover:border-transparent p-1 px-3 text-gray-500 hover:text-white rounded-2xl transition-colors duration-300">
