@@ -5,7 +5,7 @@ import { useLanyard } from "use-lanyard";
 const Skeleton = dynamic(() => import("react-skeleton-loader"), { ssr: false });
 
 export default function lanyard() {
-	const snowflake = "564293659936423936";
+	const snowflake = "524371131134902282";
 	const { data: lanyard } = useLanyard(snowflake);
 
 	const activity = lanyard?.activities.find((activity) => activity.type === 0);
