@@ -1,7 +1,7 @@
 import { useLanyard } from "use-lanyard";
 
 export default function Activity() {
-	const { data: activity } = useLanyard("524371131134902282");
+	const { data: activity } = useLanyard("291050399509774340");
 
 	return (
 		<pre>
